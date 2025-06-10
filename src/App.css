@@ -118,3 +118,46 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Estilos para o tutorial */
+.tutorial-highlight {
+  position: relative;
+  z-index: 45;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5), 0 0 0 8px rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+}
+
+.tutorial-overlay {
+  pointer-events: none;
+}
+
+.tutorial-tooltip {
+  animation: fadeInScale 0.3s ease-out;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -100%) scale(1);
+  }
+}
+
+/* Animações suaves para transições */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Melhorias visuais para cards */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
